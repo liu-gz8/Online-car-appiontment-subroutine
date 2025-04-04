@@ -1,0 +1,81 @@
+{
+	"pages": [
+		{
+			"path": "pages/Login/Login",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarTitleText": "导航首页",
+			"enablePullDownRefresh": true
+		}
+	},
+	{
+		"path": "pages/Login/register",
+		"style": {
+			"navigationBarTitleText": "注册",
+			"enablePullDownRefresh": true
+		}
+	},
+	{
+		"path": "driver/pages/Driver/driver",
+		"style": {
+			"navigationBarTitleText": "接单大厅",
+			"enablePullDownRefresh": true
+		}
+	},
+	{
+		"path": "coustom/pages/index/index",
+		"style": {
+			"navigationBarTitleText": "涛涛打车",
+			"enablePullDownRefresh": true
+		}
+	},
+	{
+		"path": "driver/pages/Driver/working",
+		"style": {
+			"navigationBarTitleText": "接单行程",
+			"enablePullDownRefresh": true
+		}
+	},
+	{
+		"path": "pages/Maker/Maker",
+		"style": {
+			"navigationBarTitleText": "评价",
+			"enablePullDownRefresh": true
+		}
+	}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"background": "#efeff4"
+		}
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/打车0.png", 
+			"selectedIconPath": "static/打车1.png",
+			"text": "导航"
+		},
+		{
+			"pagePath": "pages/Login/Login",
+			"iconPath": "static/登录0.png",
+			"selectedIconPath": "static/登录1.png",
+			"text": "用户"
+		} 
+		]
+	}
+}

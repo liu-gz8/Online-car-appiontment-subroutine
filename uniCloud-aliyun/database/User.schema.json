@@ -1,0 +1,67 @@
+{
+  "bsonType": "object",
+  "required": ["phone"],  // phone 字段为必填
+  "properties": {
+    "_id": {
+      "description": "ID，系统自动生成"
+    },
+    "nickName": {
+      "bsonType": "string",
+      "label": "昵称",
+      "description": "用户昵称，登录获取的"
+    },
+    "avatarUrl": {
+      "bsonType": "string",
+      "label": "头像",
+      "description": "用户头像图片的 URL，登录获取的"
+    },
+    "gender": {
+      "bsonType": "number",
+      "description": "性别，1: 男，2: 女",
+      "enum": [1, 2]
+    },
+    "identity": {
+      "bsonType": "number",
+      "label": "身份",
+      "description": "用户身份，1: 司机，2: 其他身份",
+      "enum": [1, 2]
+    },
+    "personalize": {
+      "bsonType": "string",
+      "label": "个性签名",
+      "description": "个性签名，编辑资料获取"
+    },
+    "mp_wx_openid": {
+      "bsonType": "string",
+      "description": "微信小程序平台openid"
+    },
+    "register_date": {
+      "bsonType": "timestamp",
+      "description": "注册时间",
+      "forceDefaultValue": { "$env": "now" }
+    },
+    "phone": {
+      "bsonType": "string",
+      "description": "用户手机号"
+    },
+    "mark": {
+      "bsonType": "double",
+      "description": "用户评分",
+      "minimum": 0,
+      "maximum": 5,
+      "default": 4
+    },
+    "balance": {
+      "bsonType": "double",
+      "description": "用户余额",
+      "default": 0.0,
+      "minimum": 0
+    }
+  },
+  "permission": {
+    "read": true,
+    "create": true,
+    "update": true,
+    "delete": false
+  }
+}
